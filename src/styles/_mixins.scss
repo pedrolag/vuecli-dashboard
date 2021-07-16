@@ -1,0 +1,6 @@
+@mixin sidenav-hover-color($color, $opacity) {
+    background: $color;
+    background: rgba($color, $opacity);
+    border-left-color: $color;
+    color: $color;
+}

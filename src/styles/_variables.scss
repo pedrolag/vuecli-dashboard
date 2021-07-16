@@ -1,0 +1,22 @@
+// Colors
+$color-primary: #fff;
+$color-secondary: #1a1a1a;
+$color-border: #ccc;
+$color-background: #efefef;
+$color-sidenav-button-hover: rgb(98, 255, 221);
+
+// Border
+$border-default: solid 1px $color-border;
+
+// Navbar
+$navbar-width: 100vw;
+$navbar-height: 64px;
+$navbar-background: $color-primary;
+$navbar-border: $border-default;
+
+// Sidenav
+$sidenav-width: 240px;
+$sidenav-height: calc(100vh - #{$navbar-height});
+$sidenav-background: $color-secondary;
+$sidenav-border: $border-default;
+
