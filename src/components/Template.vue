@@ -5,7 +5,7 @@
       <ul>
         <li v-for="objModule in arrModules" :key="objModule.id">
           <a href="objModule.url">
-            <i>{{ objModule.icon }}</i>
+            <span><font-awesome-icon :icon="objModule.icon" /></span>
             {{ objModule.name }}
           </a>
         </li>
@@ -30,13 +30,13 @@ export default {
         {
           id: 0,
           name: "Home",
-          icon: "home",
+          icon: "user-secret",
           url: "",
         },
         {
           id: 1,
           name: "Colors",
-          icon: "tint",
+          icon: "user-secret",
           url: "",
         },
       ],
@@ -71,7 +71,7 @@ export default {
       display: inline-block;
       border-left: solid 4px transparent;
       &:hover {
-        @include sidenav-hover-color($color-sidenav-button-hover, .1);
+        @include sidenav-hover-color($color-sidenav-button-hover, 0.1);
       }
     }
   }
