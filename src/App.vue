@@ -19,4 +19,16 @@ export default {
 #app {
   background: $color-background;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: $color-scrollbar-track;
+}
+::-webkit-scrollbar-thumb {
+  background: $color-scrollbar-thumb;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $color-scrollbar-thumb;
+}
 </style>

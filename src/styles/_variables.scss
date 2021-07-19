@@ -4,6 +4,9 @@ $color-secondary: #1a1a1a;
 $color-border: #ccc;
 $color-background: #efefef;
 $color-sidenav-button-hover: rgb(98, 255, 221);
+$color-scrollbar-track: #1a1a1a;
+$color-scrollbar-thumb: #ccc;
+$color-scrollbar-thumb-hover: $color-scrollbar-thumb;
 
 // Border
 $border-default: solid 1px $color-border;
@@ -20,3 +23,16 @@ $sidenav-height: calc(100vh - #{$navbar-height});
 $sidenav-background: $color-secondary;
 $sidenav-border: $border-default;
 
+// Content
+$content-width: calc(100vw - #{$sidenav-width});
+$content-height: calc(100vh - #{$navbar-height});
+$content-top: $navbar-height;
+$content-left: $sidenav-width;
+
+// Breakpoints
+$breakpoint-wtf-is-this-device: (max-width: 319px);
+$breakpoint-mobile: (min-width: 320px) and (max-width: 480px);
+$breakpoint-tablet: (min-width: 481px) and (max-width: 768px);
+$breakpoint-laptop: (min-width: 769px) and (max-width: 1024px);
+$breakpoint-desktop: (min-width: 1025px) and (max-width: 1200px);
+$breakpoint-tv: (min-width: 1201px);

@@ -1,5 +1,5 @@
 <template>
-  <div id="nav">
+  <div id="template">
     <div class="navbar"></div>
     <div class="sidenav">
       <ul>
@@ -9,14 +9,9 @@
             {{ objModule.name }}
           </a>
         </li>
-        <li v-for="x in 20" :key="x">
-          <a href="objModule.url">
-            <i>bla</i>
-            x bla
-          </a>
-        </li>
       </ul>
     </div>
+    <div class="content">asd</div>
   </div>
 </template>
 
@@ -47,7 +42,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-#nav {
+#template {
   width: 100vw;
   height: 100vh;
 
@@ -64,16 +59,32 @@ export default {
     background: $sidenav-background;
     border-right: $sidenav-border;
     overflow-y: auto;
+
     a {
       color: #fff;
       width: 100%;
       padding: 1em 2em 1em calc(2em - 4px);
       display: inline-block;
       border-left: solid 4px transparent;
+
       &:hover {
         @include sidenav-hover-color($color-sidenav-button-hover, 0.1);
       }
+
+      span {
+        display: inline-block;
+        margin-right: 16px;
+      }
     }
+  }
+
+  .content {
+    width: $content-width;
+    height: $content-height;
+    position: absolute;
+    top: $content-top;
+    left: $content-left;
+    padding: 1em;
   }
 }
 </style>
