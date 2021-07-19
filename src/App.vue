@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-    <Template />
+    <Navbar />
+    <Sidenav />
+    <Content />
   </div>
 </template>
 
 <script>
-import Template from "./components/Template.vue";
+import Navbar from "./components/template/Navbar.vue";
+import Sidenav from "./components/template/Sidenav.vue";
+import Content from "./components/template/Content.vue";
 
 export default {
   name: "App",
   components: {
-    Template,
+    Navbar,
+    Sidenav,
+    Content,
   },
 };
 </script>
